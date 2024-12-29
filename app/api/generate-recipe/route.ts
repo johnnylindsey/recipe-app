@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import axios from "axios";
 
-export interface ITestState{
-    listItems : any // eslint-disable-line @typescript-eslint/no-explicit-any
-}
-
 export async function POST(req: NextRequest) {
     try {
         const { ingredients, cuisine } = await req.json();
