@@ -1,13 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import axios from "axios";
 import { AiOutlineRobot } from "react-icons/ai";
-
-type RecipeResponse = {
-  recipe: string;
-};
 
 export default function Home() {
   const [ingredients, setIngredients] = useState("");
